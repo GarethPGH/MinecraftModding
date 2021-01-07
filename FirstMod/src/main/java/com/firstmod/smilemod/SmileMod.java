@@ -1,6 +1,7 @@
 package com.firstmod.smilemod;
 
 import com.firstmod.Init.ItemInit;
+import com.firstmod.Init.BlockInit;
 import net.minecraft.block.Block;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;

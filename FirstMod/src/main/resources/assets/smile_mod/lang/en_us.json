@@ -1,3 +1,4 @@
 {
-    "item.smile_mod.SMILE" : "Smily Face"
+    "item.smile_mod.SMILE" : "Smily Face",
+    "block.smile_mod.smile_block": "Smile Block"
 }

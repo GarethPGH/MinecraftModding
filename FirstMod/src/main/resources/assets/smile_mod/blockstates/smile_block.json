@@ -1,0 +1,8 @@
+{
+    "variants":{
+        "":{
+            "model": "smile_mod:block/smile_block"
+        }
+
+    }
+}
