@@ -1,10 +1,12 @@
 package com.firstmod.smilemod;
 
-import com.firstmod.Init.ItemInit;
-import com.firstmod.Init.BlockInit;
-import net.minecraft.block.Block;
+//import com.firstmod.Init.ItemInit;
+//import com.firstmod.Init.BlockInit;
+import com.firstmod.Init.Registration;
+//import net.minecraft.block.Block;
+//import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
+//import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -23,14 +25,13 @@ public class SmileMod {
     public final static String MOD_ID = "smile_mod";
 
     public SmileMod() {
+        Registration.register();
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
-
-        ItemInit.registerItem();
     }
 
     private void setup(final FMLCommonSetupEvent event) {
@@ -50,11 +51,12 @@ public class SmileMod {
     // You can use EventBusSubscriber to automatically subscribe events on the
     // contained class (this is subscribing to the MOD
     // Event bus for receiving Registry Events)
-    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
-            // register a new block here
-        }
-    }
+    // @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+    // public static class RegistryEvents {
+    // @SubscribeEvent
+    // public static void onBlocksRegistry(final RegistryEvent.Register<Block>
+    // blockRegistryEvent) {
+    // // register a new block here
+    // }
+    // }
 }
