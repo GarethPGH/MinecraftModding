@@ -1,12 +1,7 @@
 package com.firstmod.smilemod;
 
-//import com.firstmod.Init.ItemInit;
-//import com.firstmod.Init.BlockInit;
 import com.firstmod.Init.Registration;
-//import net.minecraft.block.Block;
-//import net.minecraft.item.Item;
 import net.minecraftforge.common.MinecraftForge;
-//import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
