@@ -12,7 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-//Adding a comment here to test a key, will be removed
+
 @Mod(SmileMod.MOD_ID)
 public class SmileMod {
     // Directly reference a log4j logger.

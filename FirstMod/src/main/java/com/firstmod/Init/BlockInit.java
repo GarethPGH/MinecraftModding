@@ -29,5 +29,5 @@ public class BlockInit {
 
     public static final RegistryObject<Block> SMILEBLOCK = register("smileblock",
             () -> new Block(AbstractBlock.Properties.create(Material.MISCELLANEOUS).sound(SoundType.PLANT)
-                    .jumpFactor(1.0F).hardnessAndResistance(1f, 2f).harvestLevel(1).harvestTool(ToolType.SHOVEL)));
+                    .jumpFactor(1F).hardnessAndResistance(1f, 2f).harvestLevel(1).harvestTool(ToolType.SHOVEL)));
 }

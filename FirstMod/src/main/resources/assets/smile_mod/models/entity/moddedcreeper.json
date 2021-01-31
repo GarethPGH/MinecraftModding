@@ -1,0 +1,6 @@
+{
+    "parent": "entity/monster",
+    "textures":{
+        "layer0": "smile_mod:entities/moddedcreeper"
+    }
+}

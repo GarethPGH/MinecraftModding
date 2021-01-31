@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 
+        {
+            "min": 0,
+            "max": 2
+        },
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:gunpowder"
+          }
+        ]
+      }
+    ]
+  }
